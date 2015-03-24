@@ -3,11 +3,11 @@
 
 A base entity, SystemPart, is defined in system and specific parts are created in a different sub project, Parts.
 The Querydsl models are generated to java source code in the system and parts projects.
-
+~~~
 /system
    ^ (depends)
 /parts
-
+~~~
 Avoid repeating build script configuration by using a root gradle script.
 
 =============
