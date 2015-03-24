@@ -1,0 +1,9 @@
+plugins {
+  id 'com.ewerk.gradle.plugins.querydsl' version '1.0.3'
+}
+
+querydsl {
+  library = "com.mysema.querydsl:querydsl-apt:$querydsl_version"
+  querydslSourcesDir = "src/querydsl/java"
+  jpa = true
+}
