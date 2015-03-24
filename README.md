@@ -1,15 +1,25 @@
-gradle-project
+## Multi build file project for gradle plugin ewerk querydsl plugin
 ==============
 
-basic gradle (2.3) build template for Java 8
+A base entity, SystemPart, is defined in system and specific parts are created in a different sub project, Parts.
+The Querydsl models are generated to java source code in the system and parts projects.
 
-Props
-~~~
+/system
+   ^ (depends)
+/parts
+
+Avoid repeating build script configuration by using a root gradle script.
+
+=============
+
+### Properties
+
+jpa_version=2.1.0
 guava_version=18.0
 junit_version=4.11
 jsr305_version=1.3.9
-logback_version=1.1.2
+logback_version=1.0.13
+querydsl_version=3.6.2
+querydsl_plugin_version=1.0.3
 slf4j_api_version=1.7.10
-testng_version=6.8.21
 truth_version=0.25
-~~~
