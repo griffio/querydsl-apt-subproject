@@ -16,7 +16,7 @@ Parts project has a dependency on the System project using the jar artifact.
 =============
 
 ### Properties
-
+~~~
 jpa_version=2.1.0
 guava_version=18.0
 junit_version=4.11
@@ -26,3 +26,4 @@ querydsl_version=3.6.2
 querydsl_plugin_version=1.0.3
 slf4j_api_version=1.7.10
 truth_version=0.25
+~~~
