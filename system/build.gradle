@@ -1,1 +1,9 @@
 apply from: "${rootDir}/querydsl-plugin.gradle"
+
+task systemArtifact(type: Jar)
+
+artifacts {
+  archives systemArtifact
+}
+
+

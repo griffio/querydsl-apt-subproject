@@ -57,5 +57,9 @@ build/
 
 ### OS X ###
 .DS_Store
+
+### Project ###
 parts/src/querydsl/
 system/src/querydsl/
+repo/
+

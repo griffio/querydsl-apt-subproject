@@ -12,11 +12,29 @@ subprojects {
 
   apply plugin: 'java'
 
+  apply plugin: 'ivy-publish'
+
   group = 'griffio'
   version = '0.1.0'
 
   repositories {
     jcenter()
+    ivy {
+      url "${rootDir}/repo"
+    }
+  }
+
+  publishing {
+    publications {
+      ivyJava(IvyPublication) {
+        from components.java
+      }
+    }
+    repositories {
+      ivy {
+        url "${rootDir}/repo"
+      }
+    }
   }
 
   dependencies {
@@ -58,7 +76,7 @@ subprojects {
 project(':parts') {
 
   dependencies {
-    compile project(':system')
+    compile "griffio:system:0.1.0"
   }
 
 }

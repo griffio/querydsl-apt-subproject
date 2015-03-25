@@ -10,6 +10,9 @@ The Querydsl models are generated to java source code in the system and parts pr
 ~~~
 Avoid repeating build script configuration by using a root gradle script.
 
+System project publishes to relative ivy repo.
+Parts project has a dependency on the System project using the jar artifact.
+
 =============
 
 ### Properties
